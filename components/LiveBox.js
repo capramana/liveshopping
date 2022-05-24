@@ -5,13 +5,16 @@ import {
     heightPercentageToDP as hp,
 } from "react-native-responsive-screen";
 
-const LiveNow = ({ chldren, displayName }) => {
+const LiveNow = ({ chldren, title, displayName }) => {
     <View style={styles.box}>
         {children}
         <View>
             <View>
                 <View style={styles.userCircle}/>
                 <Text>{displayName}</Text>
+            </View>
+            <View>
+                <Text>{title}</Text>
             </View>
         </View>
     </View>
