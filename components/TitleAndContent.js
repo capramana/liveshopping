@@ -7,11 +7,11 @@ import {
 
 const TitleAndContent = ({ children, title }) => {
     return(
-    <View style={styles.content}>
-        <Text style={styles.text}>{title}</Text>
-        {children}
-        {/*children = content component*/}
-    </View>
+        <View style={styles.content}>
+            <Text style={styles.text}>{title}</Text>
+            {children}
+            {/*children = content component*/}
+        </View>
     )
 }
 

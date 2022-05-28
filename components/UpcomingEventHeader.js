@@ -6,12 +6,14 @@ import {
 } from "react-native-responsive-screen";
 
 const UpcomingEventHeader = () => {
-    <View>
-        <Text>Hari ini - 9:30 AM</Text>
-    </View>
+    return(
+        <View>
+            <Text>Today - 9:30 AM</Text>
+        </View>
+    )
 }
 
-const style = StyleSheet.create ({
+const styles = StyleSheet.create ({
     headerBox: {
         height: hp(2), 
         width: hp(4),

@@ -5,22 +5,21 @@ import {
     heightPercentageToDP as hp,
 } from "react-native-responsive-screen";
 
-const LiveNow = ({ chldren, title, displayName }) => {
-    <View style={styles.box}>
-        {children}
-        <View>
+const LiveBox = () => {
+    return (
+        <View style={styles.box}>
             <View>
-                <View style={styles.userCircle}/>
-                <Text>{displayName}</Text>
-            </View>
-            <View>
-                <Text>{title}</Text>
+                <View>
+                    <View style={styles.userCircle}/>
+                    <Text>jessicalee</Text>
+                </View>
+                <Text>Beauty 101: Achieving the best on a budget</Text>
             </View>
         </View>
-    </View>
+    )
 }
 
-const style = StyleSheet.create ({
+const styles = StyleSheet.create ({
     box: {
         backgroundColor: "black",
         marginRight: wp(4),
