@@ -13,14 +13,14 @@ const LiveHeader = ({ displayName }) => {
         <View style={styles.userCircle} />
         <View>
           <Text>{displayName}</Text>
-          <Viewership />
+          <Viewership/>
         </View>
       </View>
       <View>
         <View style={styles.liveStudio}>
           <Text>LIVE</Text>
         </View>
-        <Image source={require("../icons/close-outline.svg")} />
+          <Image source={require("../icons/close-outline.svg")} />
       </View>
     </View>
   );

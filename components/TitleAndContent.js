@@ -27,7 +27,7 @@ const ScrollableTitleAndContent = ({ children, title }) => {
 
 const styles = StyleSheet.create ({
     content: {
-    marginTop: hp(3),
+        marginTop: hp(3),
     },
     text: {
         paddingBottom: 12,

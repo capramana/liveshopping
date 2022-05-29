@@ -1,16 +1,16 @@
 import React from "react";
 import {View, Text, StyleSheet} from "react-native";
-import LiveEventHeader from "./LiveEventHeader";
+import UpcomingEventHeader from "./UpcomingEventHeader";
 import {
     widthPercentageToDP as wp,
     heightPercentageToDP as hp,
     widthPercentageToDP,
 } from "react-native-responsive-screen";
 
-const LiveBox = ({ children, userName, title }) => {
+const UpcomingShow = ({ userName, title }) => {
     return (
         <View style={styles.box}>
-            <LiveEventHeader/>
+            <UpcomingEventHeader/>
             <View>
                 <View style={styles.user}>
                     <View style={styles.userCircle}/>
@@ -26,8 +26,8 @@ const styles = StyleSheet.create ({
     box: {
         backgroundColor: "gray",
         marginRight: wp(4),
-        height: hp(35),
-        width: wp(50),
+        height: hp(30),
+        width: wp(40),
         display: "flex",
         justifyContent: "space-between",
         flexDirection: "column",
@@ -47,8 +47,6 @@ const styles = StyleSheet.create ({
     },
     userName: {
         paddingLeft: wp(1.5),
-        fontSize: wp(4),
-        color: "white",
     },
     userCircle: {
         backgroundColor: "white",
@@ -57,10 +55,9 @@ const styles = StyleSheet.create ({
         borderRadius: 100,
     },
     title: {
-        fontSize: wp(5.25),
+        fontSize: wp(4.5),
         paddingTop: wp(1.5),
-        color: "white",
     }
 })
 
-export default LiveBox
+export default UpcomingShow

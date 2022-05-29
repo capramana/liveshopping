@@ -3,8 +3,7 @@ import Content from "../components/Content"
 import Header from "../components/Header"
 import Categories from "../components/Categories";
 import LiveBox from "../components/LiveBox";
-import LiveEventHeader from "../components/LiveEventHeader";
-import UpcomingEventHeader from "../components/UpcomingEventHeader";
+import UpcomingShow from "../components/UpcomingShow";
 import {TitleAndContent, ScrollableTitleAndContent} from "../components/TitleAndContent";
 import {View, StyleSheet} from "react-native"
 import {
@@ -18,10 +17,9 @@ const Home = () => {
             <Header/>
             <Content>
                 <ScrollableTitleAndContent title="Live Now!">
-                    <LiveBox/>
-                    <LiveBox/>
-                    <LiveBox/>
-                    <LiveBox/>
+                    <LiveBox userName="jessicalee" title="Beauty 101: Achieving the best on a budget!"/>
+                    <LiveBox userName="thomasin" title="Fundamentals of facial care"/>
+                    <LiveBox userName="jeremystyles" title="Live a little with Jeremy Styles"/>
                 </ScrollableTitleAndContent>
                 <ScrollableTitleAndContent title="Categories">
                     <Categories categoryTitle="Lip Stick"/>
@@ -30,8 +28,8 @@ const Home = () => {
                     <Categories categoryTitle="Lip Stick"/>
                 </ScrollableTitleAndContent>
                 <TitleAndContent title="Coming Soon">
-                    <LiveBox/>
-                    <LiveBox/>
+                    <UpcomingShow userName="justinewathers" title="Let's talk about skincare!"/>
+                    <UpcomingShow userName="Glossier" title="New Glossier creams?!?!"/>
                 </TitleAndContent>
             </Content>
         </>
@@ -39,15 +37,7 @@ const Home = () => {
 }
 
 const styles = StyleSheet.create({
-    container: {
-        flex: 1,
-    },
-    box: {
-        backgroundColor: "black",
-        marginRight: wp(4),
-        height: hp(30),
-        width: wp(40),
-    },
+
 })
 
 export default Home

@@ -11,7 +11,7 @@ const LiveEventHeader = () => {
         <View style={styles.liveHeader}>
             <View style={styles.liveBox}>
                 <View style={styles.liveCircle}/>
-                <Text>Live</Text>
+                <Text style={styles.liveText}>Live</Text>
             </View>
             <Viewership/>
         </View>
@@ -20,22 +20,31 @@ const LiveEventHeader = () => {
 
 const styles = StyleSheet.create ({
     liveCircle: {
-        backgroundColor: "black",
-        height: hp(1),
-        width: hp(1),
+        backgroundColor: "white",
+        height: hp(0.5),
+        width: hp(0.5),
         borderRadius: 100,
     },
     liveBox: {
         backgroundColor: "#FF3232",
-        height: hp(3),
+        height: hp(2.5),
         width: "auto",
         padding: wp(2),
         borderRadius: 100,
+        display: "flex",
+        flexDirection: "row",
+        alignItems: "center",
+        justifyContent: "space-between",
     },
     liveHeader: {
         display: "flex",
         justifyContent: "space-between",
         flexDirection: "row",
+    },
+    liveText: {
+        fontSize: wp(3),
+        color: "white",
+        paddingLeft: wp(2),
     },
 })
 

@@ -8,6 +8,6 @@ import {
 
 const LiveShows = () => {
     return(
-        <LiveHeader/>
+        <LiveHeader displayName="jessicalee"/>
     )
 }

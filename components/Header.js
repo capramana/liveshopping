@@ -10,7 +10,7 @@ const Header = () => {
         <View style={styles.container}>
             <View>
                 <Text style={styles.welcome}>Welcome</Text>
-                <Text style={styles.user}>Patricia</Text> {/*Display name*/}
+                <Text style={styles.user}>Cindy</Text> {/*Display name*/}
             </View>
             <View style={styles.userIcon} /> {/*User ICN*/}
         </View>
@@ -44,7 +44,8 @@ const styles = StyleSheet.create ({
     },
     user: {
         fontSize: wp(6.5),
-    }
+        fontWeight: "bold",
+    },
 })
 
 export default Header

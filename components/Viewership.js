@@ -7,13 +7,25 @@ import {
 
 const Viewership = () => {
     return(
-        <View>
-            <Image 
-                source={require("../icons/eye-outline.svg")}
-            />
+        <View style={styles.viewCount}>
+            <View style={styles.box}/>
             <Text>1.4k</Text>
         </View>
     )
 }
+
+const styles = StyleSheet.create ({
+    viewCount: {
+        display: "flex",
+        flexDirection: "row",
+        alignItems: "center",
+    },
+    box: {
+        backgroundColor: "black",
+        height: wp(3.5),
+        width: wp(3.5),
+        paddingRight: wp(3),
+    },
+})
 
 export default Viewership
