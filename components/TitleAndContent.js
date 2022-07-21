@@ -19,8 +19,8 @@ const ScrollableTitleAndContent = ({ children, title }) => {
     return(
         <TitleAndContent title={title}>
             <ScrollView horizontal={true} showsHorizontalScrollIndicator={false}>
-            {children}      
-        </ScrollView>
+                {children}      
+            </ScrollView>
         </TitleAndContent>
     )
 }

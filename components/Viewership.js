@@ -5,10 +5,16 @@ import {
     heightPercentageToDP as hp,
 } from "react-native-responsive-screen";
 
+import ViewerICN from "../icons/eye-outline.svg"
+
 const Viewership = () => {
     return(
         <View style={styles.viewCount}>
-            <View style={styles.box}/>
+            <ViewerICN
+                height = {hp(2)}
+                width = {hp(2)}
+                fill = "black"
+            />
             <Text>1.4k</Text>
         </View>
     )
